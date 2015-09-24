@@ -16,9 +16,7 @@ namespace ConvertNsf
     {
         static void Main(string[] args)
         {
-
-            //var pathToRom = @"\\Mac\Home\Downloads\contra-nes-[NSF-ID1909].nsf";
-            var pathToRom = @"\\Mac\Home\Downloads\Contra (USA)\Contra (USA).nes";
+            var pathToRom = @"Contra (USA).nes";
 
             Global.Config = new Config();
 
@@ -35,7 +33,7 @@ namespace ConvertNsf
 
             NES.BootGodDB.GetDatabaseBytes = () =>
             {
-                using (var stream = new StreamReader(@"C:\Users\jeff\GitHub\BizHawk\output\gamedb\NesCarts (2012-10-22).xml"))
+                using (var stream = new StreamReader(@"NesCarts (2012-10-22).xml"))
                 {
                     return stream.BaseStream.ReadAllBytes();
                 }

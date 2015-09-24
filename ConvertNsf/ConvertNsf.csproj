@@ -83,6 +83,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\BizHawk\NesCarts %282012-10-22%29.xml">
+      <Link>NesCarts %282012-10-22%29.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Files\Contra %28USA%29.nes">
+      <Link>Contra %28USA%29.nes</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
